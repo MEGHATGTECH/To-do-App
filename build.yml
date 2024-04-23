@@ -1,11 +1,6 @@
 - name: Deploy a normal HTML file
   hosts: all # Target all hosts in your inventory
-
   tasks:
-    - name: Copy the HTML file to the destination
-      copy:
-        src: /index.html # Replace with the actual path
-        dest: / # Replace with your desired destination directory
-        mode: 0644 # Set appropriate permissions (read/write for owner, read for others)
-        owner: www-data # Set the owner of the file (adjust based on your web server setup)
-        group: www-data
+    - name: test connection
+      ansible.builtin.ping
+    
