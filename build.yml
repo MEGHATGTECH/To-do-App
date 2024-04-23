@@ -1,5 +1,8 @@
-- name: Deploy a normal HTML file
-  hosts: all # Target all hosts in your inventory
-  tasks:
-    - name: test connection
-      ansible.builtin.ping:
+- hosts: local
+  gather_facts: False
+  roles:
+    - deps
+
+- hosts: builder
+  roles:
+    - build
