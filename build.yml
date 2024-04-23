@@ -1,0 +1,6 @@
+all:
+  children:
+    website:
+      hosts:
+        uat.thinkgestalt.com:
+        uat.thinkgestalt.com:
