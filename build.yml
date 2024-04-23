@@ -3,4 +3,3 @@ all:
     website:
       hosts:
         uat.thinkgestalt.com:
-        uat.thinkgestalt.com:
