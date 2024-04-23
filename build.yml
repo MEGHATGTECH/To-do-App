@@ -2,5 +2,4 @@
   hosts: all # Target all hosts in your inventory
   tasks:
     - name: test connection
-      ansible.builtin.ping
-    
+      ansible.builtin.ping:
